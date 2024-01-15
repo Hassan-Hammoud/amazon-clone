@@ -9,7 +9,11 @@ const Header = () => {
   return (
     <header>
       <Link to="/">
-        <img src={Logo} className="header-logo" alt="Amazon-logo" />
+        <img
+          src="https://i.ibb.co/T2tgW1k/amazon-logo.png"
+          className="header-logo"
+          alt="Amazon-logo"
+        />
       </Link>
       <div className="header-search">
         <input type="text" className="header-input" />
