@@ -7,7 +7,7 @@ import { useAuth } from "../../context/GlobalState";
 import { auth } from "../../firebase";
 
 const Header = () => {
-  const { user } = useAuth();
+  const { user, basket } = useAuth();
   const handleAuthentication = () => {
     auth.signOut();
   };
@@ -57,7 +57,10 @@ const Header = () => {
               style={{ fontSize: "35px" }}
               className="cartIcon"
             />
-            <div className="header-optionLineTwo header-basketCount">5</div>
+            <div className="header-optionLineTwo header-basketCount">
+              {/* {basket ? basket.length : 0} */}
+              {basket?.length}
+            </div>
           </div>
         </Link>
       </div>
