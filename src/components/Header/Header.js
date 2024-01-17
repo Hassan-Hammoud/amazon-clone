@@ -1,11 +1,17 @@
 import React from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
-import Logo from "../Img/amazon-logo.png";
 import { LuSearch } from "react-icons/lu";
 import { BsMinecartLoaded } from "react-icons/bs";
+import { useAuth } from "../../context/GlobalState";
+import { auth } from "../../firebase";
 
 const Header = () => {
+  const { user } = useAuth();
+  const handleAuthentication = () => {
+    auth.signOut();
+  };
+
   return (
     <header>
       <Link to="/">
@@ -19,11 +25,15 @@ const Header = () => {
         <input type="text" className="header-input" />
         <LuSearch className="header-searchIcon" />
       </div>
-      <div className="header-nav">
-        <Link to="/login">
+      <div className="header-nav" onClick={handleAuthentication}>
+        <Link to={!user && "/login"}>
           <div className="header-option">
-            <div className="header-optionLineOne">Hello Guest</div>
-            <div className="header-optionLineTwo">Sign In</div>
+            <div className="header-optionLineOne">
+              Hello {user ? `${user.email}` : "Guest"}
+            </div>
+            <div className="header-optionLineTwo">
+              {user ? "Sign Out" : "Sign In"}
+            </div>
           </div>
         </Link>
 
