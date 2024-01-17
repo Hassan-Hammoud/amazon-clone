@@ -4,7 +4,7 @@ import { FaStar } from "react-icons/fa6";
 import { useAuth } from "../../context/GlobalState";
 
 const Product = ({ id, image, price, title, rating }) => {
-  const { dispatch, basket } = useAuth();
+  const { dispatch } = useAuth();
   const addToBasket = () => {
     dispatch({
       type: "ADD_TO_BASKET",
@@ -17,7 +17,6 @@ const Product = ({ id, image, price, title, rating }) => {
       },
     });
   };
-  console.log(basket);
   return (
     <div className="product">
       <div className="product-info">
@@ -30,7 +29,7 @@ const Product = ({ id, image, price, title, rating }) => {
           {Array(rating)
             .fill()
             .map((_, i) => (
-              <FaStar className="star-rating" />
+              <FaStar key={i} className="star-rating" />
             ))}
         </div>
       </div>

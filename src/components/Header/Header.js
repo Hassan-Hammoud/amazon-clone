@@ -58,7 +58,6 @@ const Header = () => {
               className="cartIcon"
             />
             <div className="header-optionLineTwo header-basketCount">
-              {/* {basket ? basket.length : 0} */}
               {basket?.length}
             </div>
           </div>
