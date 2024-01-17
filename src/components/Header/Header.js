@@ -25,8 +25,8 @@ const Header = () => {
         <input type="text" className="header-input" />
         <LuSearch className="header-searchIcon" />
       </div>
-      <div className="header-nav" onClick={handleAuthentication}>
-        <Link to={!user && "/login"}>
+      <div className="header-nav">
+        <Link onClick={handleAuthentication} to={!user && "/login"}>
           <div className="header-option">
             <div className="header-optionLineOne">
               Hello {user ? `${user.email}` : "Guest"}
