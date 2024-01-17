@@ -2,24 +2,24 @@ import React from "react";
 import "./Product.css";
 import { FaStar } from "react-icons/fa6";
 
-const Product = () => {
+const Product = ({ id, image, price, title, rating }) => {
   return (
     <div className="product">
       <div className="product-info">
-        <p>Title</p>
+        <p>{title}</p>
         <p className="product-price">
           <small>$</small>
-          <strong>105</strong>
+          <strong>{price}</strong>
         </p>
         <div className="product-rating">
-          <FaStar className="star-rating" />
-          <FaStar className="star-rating" />
-          <FaStar className="star-rating" />
-          <FaStar className="star-rating" />
-          <FaStar className="star-rating" />
+          {Array(rating)
+            .fill()
+            .map((_, i) => (
+              <FaStar className="star-rating" />
+            ))}
         </div>
       </div>
-      <img src="https://i.ibb.co/T2tgW1k/amazon-logo.png" alt="m" />
+      <img src={image} alt="product-img" />
       <button>Add To Basket</button>
     </div>
   );
