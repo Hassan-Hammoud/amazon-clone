@@ -1,4 +1,5 @@
 import React from "react";
+import { CardElement } from "@stripe/react-stripe-js";
 import "./Payment.css";
 import { Link } from "react-router-dom";
 import { useAuth } from "../../context/GlobalState";
@@ -7,6 +8,10 @@ import CurrencyFormat from "react-currency-format";
 import { getBasketTotal } from "../../context/AppReducer";
 const Payment = () => {
   const { basket, user } = useAuth();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+  const handleChange = () => {};
   return (
     <div className="payment">
       <div className="payment-container">
@@ -51,8 +56,8 @@ const Payment = () => {
         <div className="payment-section">
           <h3>Payment Method</h3>
           <div className="payment-details">
-            <form>
-              {/* Strip Card */}
+            <form onSubmit={handleSubmit}>
+              <CardElement onChange={handleChange} />
 
               <div className="payment-priceContainer">
                 <CurrencyFormat
@@ -63,7 +68,7 @@ const Payment = () => {
                   thousandSeparator={true}
                   prefix={"$"}
                 />
-                <button>
+                <button type="submit">
                   <span>Buy Now</span>
                 </button>
               </div>
