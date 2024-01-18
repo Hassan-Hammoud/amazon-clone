@@ -7,6 +7,8 @@ import CheckoutProduct from "../CheckoutProduct/CheckoutProduct";
 import CurrencyFormat from "react-currency-format";
 import { getBasketTotal } from "../../context/AppReducer";
 import axios from "../axios";
+import { doc, setDoc } from "firebase/firestore";
+import { db } from "../../firebase";
 const Payment = () => {
   const { basket, user, dispatch } = useAuth();
   const navigate = useNavigate();
@@ -39,7 +41,13 @@ const Payment = () => {
           card: elements.getElement(CardElement),
         },
       })
-      .then((paymentIntent) => {
+      .then(({ paymentIntent }) => {
+        const ref = doc(db, "users", user?.uid, "orders", paymentIntent.id);
+        setDoc(ref, {
+          basket: basket,
+          amount: paymentIntent.amount,
+          created: paymentIntent.created,
+        });
         setSucceeded(true);
         setProcessing(false);
         setError(null);
