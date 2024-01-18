@@ -1,0 +1,488 @@
+[debug] [2024-01-18T09:34:47.245Z] ----------------------------------------------------------------------
+[debug] [2024-01-18T09:34:47.247Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Hassan Hammoud\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2024-01-18T09:34:47.248Z] CLI Version:   13.0.2
+[debug] [2024-01-18T09:34:47.248Z] Platform:      win32
+[debug] [2024-01-18T09:34:47.248Z] Node Version:  v20.3.0
+[debug] [2024-01-18T09:34:47.248Z] Time:          Thu Jan 18 2024 11:34:47 GMT+0200 (Eastern European Standard Time)
+[debug] [2024-01-18T09:34:47.249Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-18T09:34:47.435Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-18T09:34:47.435Z] > authorizing via signed-in user (hassanhammoud2000@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2024-01-18T09:34:47.445Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-01-18T09:34:47.445Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-01-18T09:34:47.458Z] [hub] writing locator at C:\Users\HASSAN~1\AppData\Local\Temp\hub-clone-2f7d1.json
+[debug] [2024-01-18T09:34:47.479Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-01-18T09:34:47.479Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-01-18T09:34:47.479Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2024-01-18T09:34:47.483Z] defaultcredentials: writing to file C:\Users\Hassan Hammoud\AppData\Roaming\firebase\hassanhammoud2000_gmail_com_application_default_credentials.json
+[debug] [2024-01-18T09:34:47.485Z] Setting GAC to C:\Users\Hassan Hammoud\AppData\Roaming\firebase\hassanhammoud2000_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Hassan Hammoud\\AppData\\Roaming\\firebase\\hassanhammoud2000_gmail_com_application_default_credentials.json"}}
+[debug] [2024-01-18T09:34:47.487Z] > refreshing access token with scopes: []
+[debug] [2024-01-18T09:34:47.489Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-01-18T09:34:47.489Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-18T09:34:48.073Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-01-18T09:34:48.073Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-18T09:34:48.095Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-2f7d1/adminSdkConfig [none]
+[debug] [2024-01-18T09:34:48.586Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-2f7d1/adminSdkConfig 200
+[debug] [2024-01-18T09:34:48.586Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-2f7d1/adminSdkConfig {"projectId":"clone-2f7d1","storageBucket":"clone-2f7d1.appspot.com"}
+[info] i  ui: downloading ui-v1.11.7.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.11.7.zip..."}}
+[debug] [2024-01-18T09:34:48.607Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.7.zip 
+[debug] [2024-01-18T09:34:49.047Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.7.zip 200
+[debug] [2024-01-18T09:34:49.048Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.7.zip [stream]
+[debug] [2024-01-18T09:34:53.893Z] Data is 3064105
+[debug] [2024-01-18T09:34:53.894Z] [unzip] Entry: client/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-01-18T09:34:53.894Z] [unzip] Processing entry: client\
+[debug] [2024-01-18T09:34:53.895Z] [unzip] mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\
+[debug] [2024-01-18T09:34:53.898Z] [unzip] Entry: client/favicon.ico (compressed_size=2497 bytes, uncompressed_size=7406 bytes)
+[debug] [2024-01-18T09:34:53.899Z] [unzip] Processing entry: client\favicon.ico
+[debug] [2024-01-18T09:34:53.899Z] [unzip] else mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2024-01-18T09:34:53.900Z] [unzip] deflating: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\favicon.ico
+[debug] [2024-01-18T09:34:53.920Z] [unzip] Entry: client/apple-touch-icon.png (compressed_size=7231 bytes, uncompressed_size=7367 bytes)
+[debug] [2024-01-18T09:34:53.920Z] [unzip] Processing entry: client\apple-touch-icon.png
+[debug] [2024-01-18T09:34:53.920Z] [unzip] else mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2024-01-18T09:34:53.922Z] [unzip] deflating: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\apple-touch-icon.png
+[debug] [2024-01-18T09:34:53.926Z] [unzip] Entry: client/android-chrome-512x512.png (compressed_size=16987 bytes, uncompressed_size=18186 bytes)
+[debug] [2024-01-18T09:34:53.927Z] [unzip] Processing entry: client\android-chrome-512x512.png
+[debug] [2024-01-18T09:34:53.927Z] [unzip] else mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2024-01-18T09:34:53.928Z] [unzip] deflating: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\android-chrome-512x512.png
+[debug] [2024-01-18T09:34:53.932Z] [unzip] Entry: client/assets/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-01-18T09:34:53.932Z] [unzip] Processing entry: client\assets\
+[debug] [2024-01-18T09:34:53.933Z] [unzip] mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets\
+[debug] [2024-01-18T09:34:53.934Z] [unzip] Entry: client/assets/extensions/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-01-18T09:34:53.934Z] [unzip] Processing entry: client\assets\extensions\
+[debug] [2024-01-18T09:34:53.934Z] [unzip] mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets\extensions\
+[debug] [2024-01-18T09:34:53.936Z] [unzip] Entry: client/assets/extensions/default-extension.png (compressed_size=1646 bytes, uncompressed_size=1657 bytes)
+[debug] [2024-01-18T09:34:53.937Z] [unzip] Processing entry: client\assets\extensions\default-extension.png
+[debug] [2024-01-18T09:34:53.937Z] [unzip] else mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets\extensions
+[debug] [2024-01-18T09:34:53.938Z] [unzip] deflating: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets\extensions\default-extension.png
+[debug] [2024-01-18T09:34:53.942Z] [unzip] Entry: client/assets/index.58ca09f7.css (compressed_size=37601 bytes, uncompressed_size=321252 bytes)
+[debug] [2024-01-18T09:34:53.942Z] [unzip] Processing entry: client\assets\index.58ca09f7.css
+[debug] [2024-01-18T09:34:53.942Z] [unzip] else mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets
+[debug] [2024-01-18T09:34:53.952Z] [unzip] deflating: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets\index.58ca09f7.css
+[debug] [2024-01-18T09:34:53.962Z] [unzip] Entry: client/assets/index.c2583d42.js (compressed_size=526232 bytes, uncompressed_size=1860152 bytes)
+[debug] [2024-01-18T09:34:53.962Z] [unzip] Processing entry: client\assets\index.c2583d42.js
+[debug] [2024-01-18T09:34:53.963Z] [unzip] else mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets
+[debug] [2024-01-18T09:34:53.963Z] [unzip] deflating: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets\index.c2583d42.js
+[debug] [2024-01-18T09:34:54.007Z] [unzip] Entry: client/assets/provider-icons/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-01-18T09:34:54.007Z] [unzip] Processing entry: client\assets\provider-icons\
+[debug] [2024-01-18T09:34:54.007Z] [unzip] mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\
+[debug] [2024-01-18T09:34:54.008Z] [unzip] Entry: client/assets/provider-icons/auth_service_oidc.svg (compressed_size=414 bytes, uncompressed_size=858 bytes)
+[debug] [2024-01-18T09:34:54.008Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2024-01-18T09:34:54.009Z] [unzip] else mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-01-18T09:34:54.009Z] [unzip] deflating: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2024-01-18T09:34:54.012Z] [unzip] Entry: client/assets/provider-icons/auth_service_yahoo.svg (compressed_size=577 bytes, uncompressed_size=1182 bytes)
+[debug] [2024-01-18T09:34:54.012Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2024-01-18T09:34:54.012Z] [unzip] else mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-01-18T09:34:54.013Z] [unzip] deflating: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2024-01-18T09:34:54.015Z] [unzip] Entry: client/assets/provider-icons/auth_service_phone.svg (compressed_size=261 bytes, uncompressed_size=414 bytes)
+[debug] [2024-01-18T09:34:54.015Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_phone.svg
+[debug] [2024-01-18T09:34:54.016Z] [unzip] else mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-01-18T09:34:54.016Z] [unzip] deflating: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_phone.svg
+[debug] [2024-01-18T09:34:54.019Z] [unzip] Entry: client/assets/provider-icons/auth_service_saml.svg (compressed_size=575 bytes, uncompressed_size=1226 bytes)
+[debug] [2024-01-18T09:34:54.020Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_saml.svg
+[debug] [2024-01-18T09:34:54.020Z] [unzip] else mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-01-18T09:34:54.021Z] [unzip] deflating: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_saml.svg
+[debug] [2024-01-18T09:34:54.023Z] [unzip] Entry: client/assets/provider-icons/auth_service_mslive.svg (compressed_size=203 bytes, uncompressed_size=378 bytes)
+[debug] [2024-01-18T09:34:54.024Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2024-01-18T09:34:54.024Z] [unzip] else mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-01-18T09:34:54.025Z] [unzip] deflating: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2024-01-18T09:34:54.027Z] [unzip] Entry: client/assets/provider-icons/auth_service_facebook.svg (compressed_size=289 bytes, uncompressed_size=457 bytes)
+[debug] [2024-01-18T09:34:54.028Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2024-01-18T09:34:54.028Z] [unzip] else mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-01-18T09:34:54.028Z] [unzip] deflating: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2024-01-18T09:34:54.032Z] [unzip] Entry: client/assets/provider-icons/auth_service_play_games.svg (compressed_size=565 bytes, uncompressed_size=1173 bytes)
+[debug] [2024-01-18T09:34:54.032Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2024-01-18T09:34:54.032Z] [unzip] else mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-01-18T09:34:54.033Z] [unzip] deflating: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2024-01-18T09:34:54.036Z] [unzip] Entry: client/assets/provider-icons/auth_service_github.svg (compressed_size=466 bytes, uncompressed_size=838 bytes)
+[debug] [2024-01-18T09:34:54.037Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_github.svg
+[debug] [2024-01-18T09:34:54.037Z] [unzip] else mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-01-18T09:34:54.037Z] [unzip] deflating: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_github.svg
+[debug] [2024-01-18T09:34:54.040Z] [unzip] Entry: client/assets/provider-icons/auth_service_apple.svg (compressed_size=230 bytes, uncompressed_size=334 bytes)
+[debug] [2024-01-18T09:34:54.040Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_apple.svg
+[debug] [2024-01-18T09:34:54.040Z] [unzip] else mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-01-18T09:34:54.041Z] [unzip] deflating: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_apple.svg
+[debug] [2024-01-18T09:34:54.043Z] [unzip] Entry: client/assets/provider-icons/auth_service_google.svg (compressed_size=409 bytes, uncompressed_size=720 bytes)
+[debug] [2024-01-18T09:34:54.044Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_google.svg
+[debug] [2024-01-18T09:34:54.044Z] [unzip] else mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-01-18T09:34:54.044Z] [unzip] deflating: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_google.svg
+[debug] [2024-01-18T09:34:54.047Z] [unzip] Entry: client/assets/provider-icons/auth_service_email.svg (compressed_size=228 bytes, uncompressed_size=326 bytes)
+[debug] [2024-01-18T09:34:54.047Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_email.svg
+[debug] [2024-01-18T09:34:54.047Z] [unzip] else mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-01-18T09:34:54.048Z] [unzip] deflating: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_email.svg
+[debug] [2024-01-18T09:34:54.050Z] [unzip] Entry: client/assets/provider-icons/auth_service_twitter.svg (compressed_size=444 bytes, uncompressed_size=751 bytes)
+[debug] [2024-01-18T09:34:54.051Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2024-01-18T09:34:54.051Z] [unzip] else mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-01-18T09:34:54.052Z] [unzip] deflating: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2024-01-18T09:34:54.055Z] [unzip] Entry: client/assets/provider-icons/auth_service_game_center.svg (compressed_size=991 bytes, uncompressed_size=3921 bytes)
+[debug] [2024-01-18T09:34:54.055Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2024-01-18T09:34:54.055Z] [unzip] else mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-01-18T09:34:54.056Z] [unzip] deflating: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2024-01-18T09:34:54.058Z] [unzip] Entry: client/assets/index.c2583d42.js.map (compressed_size=1778557 bytes, uncompressed_size=7961927 bytes)
+[debug] [2024-01-18T09:34:54.059Z] [unzip] Processing entry: client\assets\index.c2583d42.js.map
+[debug] [2024-01-18T09:34:54.059Z] [unzip] else mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets
+[debug] [2024-01-18T09:34:54.059Z] [unzip] deflating: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets\index.c2583d42.js.map
+[debug] [2024-01-18T09:34:54.217Z] [unzip] Entry: client/assets/img/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-01-18T09:34:54.217Z] [unzip] Processing entry: client\assets\img\
+[debug] [2024-01-18T09:34:54.217Z] [unzip] mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets\img\
+[debug] [2024-01-18T09:34:54.218Z] [unzip] Entry: client/assets/img/database.png (compressed_size=29449 bytes, uncompressed_size=29988 bytes)
+[debug] [2024-01-18T09:34:54.219Z] [unzip] Processing entry: client\assets\img\database.png
+[debug] [2024-01-18T09:34:54.219Z] [unzip] else mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets\img
+[debug] [2024-01-18T09:34:54.220Z] [unzip] deflating: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\assets\img\database.png
+[debug] [2024-01-18T09:34:54.223Z] [unzip] Entry: client/safari-pinned-tab.svg (compressed_size=838 bytes, uncompressed_size=1504 bytes)
+[debug] [2024-01-18T09:34:54.223Z] [unzip] Processing entry: client\safari-pinned-tab.svg
+[debug] [2024-01-18T09:34:54.223Z] [unzip] else mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2024-01-18T09:34:54.224Z] [unzip] deflating: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\safari-pinned-tab.svg
+[debug] [2024-01-18T09:34:54.226Z] [unzip] Entry: client/mstile-150x150.png (compressed_size=5406 bytes, uncompressed_size=5723 bytes)
+[debug] [2024-01-18T09:34:54.227Z] [unzip] Processing entry: client\mstile-150x150.png
+[debug] [2024-01-18T09:34:54.227Z] [unzip] else mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2024-01-18T09:34:54.227Z] [unzip] deflating: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\mstile-150x150.png
+[debug] [2024-01-18T09:34:54.230Z] [unzip] Entry: client/browserconfig.xml (compressed_size=491 bytes, uncompressed_size=822 bytes)
+[debug] [2024-01-18T09:34:54.230Z] [unzip] Processing entry: client\browserconfig.xml
+[debug] [2024-01-18T09:34:54.231Z] [unzip] else mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2024-01-18T09:34:54.231Z] [unzip] deflating: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\browserconfig.xml
+[debug] [2024-01-18T09:34:54.233Z] [unzip] Entry: client/robots.txt (compressed_size=26 bytes, uncompressed_size=26 bytes)
+[debug] [2024-01-18T09:34:54.234Z] [unzip] Processing entry: client\robots.txt
+[debug] [2024-01-18T09:34:54.234Z] [unzip] else mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2024-01-18T09:34:54.234Z] [unzip] Writing file: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\robots.txt
+[debug] [2024-01-18T09:34:54.238Z] [unzip] Entry: client/index.html (compressed_size=1363 bytes, uncompressed_size=3064 bytes)
+[debug] [2024-01-18T09:34:54.238Z] [unzip] Processing entry: client\index.html
+[debug] [2024-01-18T09:34:54.238Z] [unzip] else mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2024-01-18T09:34:54.239Z] [unzip] deflating: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\index.html
+[debug] [2024-01-18T09:34:54.241Z] [unzip] Entry: client/favicon-16x16.png (compressed_size=757 bytes, uncompressed_size=777 bytes)
+[debug] [2024-01-18T09:34:54.242Z] [unzip] Processing entry: client\favicon-16x16.png
+[debug] [2024-01-18T09:34:54.242Z] [unzip] else mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2024-01-18T09:34:54.242Z] [unzip] deflating: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\favicon-16x16.png
+[debug] [2024-01-18T09:34:54.245Z] [unzip] Entry: client/manifest.json (compressed_size=246 bytes, uncompressed_size=551 bytes)
+[debug] [2024-01-18T09:34:54.245Z] [unzip] Processing entry: client\manifest.json
+[debug] [2024-01-18T09:34:54.245Z] [unzip] else mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2024-01-18T09:34:54.246Z] [unzip] deflating: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\manifest.json
+[debug] [2024-01-18T09:34:54.248Z] [unzip] Entry: client/favicon-32x32.png (compressed_size=1175 bytes, uncompressed_size=1175 bytes)
+[debug] [2024-01-18T09:34:54.248Z] [unzip] Processing entry: client\favicon-32x32.png
+[debug] [2024-01-18T09:34:54.248Z] [unzip] else mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2024-01-18T09:34:54.249Z] [unzip] Writing file: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\favicon-32x32.png
+[debug] [2024-01-18T09:34:54.251Z] [unzip] Entry: client/android-chrome-192x192.png (compressed_size=7602 bytes, uncompressed_size=7834 bytes)
+[debug] [2024-01-18T09:34:54.251Z] [unzip] Processing entry: client\android-chrome-192x192.png
+[debug] [2024-01-18T09:34:54.251Z] [unzip] else mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2024-01-18T09:34:54.252Z] [unzip] deflating: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\client\android-chrome-192x192.png
+[debug] [2024-01-18T09:34:54.254Z] [unzip] Entry: server/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-01-18T09:34:54.255Z] [unzip] Processing entry: server\
+[debug] [2024-01-18T09:34:54.255Z] [unzip] mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\server\
+[debug] [2024-01-18T09:34:54.256Z] [unzip] Entry: server/server.js (compressed_size=343746 bytes, uncompressed_size=1346374 bytes)
+[debug] [2024-01-18T09:34:54.256Z] [unzip] Processing entry: server\server.js
+[debug] [2024-01-18T09:34:54.256Z] [unzip] else mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\server
+[debug] [2024-01-18T09:34:54.257Z] [unzip] deflating: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\server\server.js
+[debug] [2024-01-18T09:34:54.286Z] [unzip] Entry: server/server.js.map (compressed_size=289157 bytes, uncompressed_size=1325651 bytes)
+[debug] [2024-01-18T09:34:54.286Z] [unzip] Processing entry: server\server.js.map
+[debug] [2024-01-18T09:34:54.286Z] [unzip] else mkdir: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\server
+[debug] [2024-01-18T09:34:54.287Z] [unzip] deflating: C:\Users\Hassan Hammoud\.cache\firebase\emulators\ui-v1.11.7\server\server.js.map
+[debug] [2024-01-18T09:34:54.316Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-01-18T09:34:54.317Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-01-18T09:34:54.317Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\Hassan Hammoud\\.cache\\firebase\\emulators\\ui-v1.11.7\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\Hassan Hammoud\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.7\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2024-01-18T09:34:54.522Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2024-01-18T09:34:54.522Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\Hassan Hammoud\\Desktop\\amazon-clone\\functions\" for Cloud Functions..."}}
+[debug] [2024-01-18T09:34:54.618Z] Validating nodejs source
+[debug] [2024-01-18T09:34:57.285Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.12.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-01-18T09:34:57.285Z] Building nodejs source
+[debug] [2024-01-18T09:34:57.286Z] Failed to find version of module node: reached end of search path C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-01-18T09:34:57.291Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-01-18T09:34:57.310Z] Found firebase-functions binary at 'C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8723
+
+[debug] [2024-01-18T09:34:58.187Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/clone-2f7d1/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/clone-2f7d1/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2024-01-18T09:36:02.780Z] Functions emulator received unknown request at path /
+[debug] [2024-01-18T09:36:03.239Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2024-01-18T09:36:54.686Z] [work-queue] {"queuedWork":["/clone-2f7d1/us-central1/api-2024-01-18T09:36:54.686Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-18T09:36:54.687Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-2f7d1/us-central1/api-2024-01-18T09:36:54.686Z"],"workRunningCount":1}
+[debug] [2024-01-18T09:36:54.689Z] Accepted request GET /clone-2f7d1/us-central1/api --> us-central1-api
+[debug] [2024-01-18T09:36:54.696Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-01-18T09:36:54.697Z] [functions] Got req.url=/clone-2f7d1/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-2f7d1/us-central1/api, mapping to path=/"}}
+[debug] [2024-01-18T09:36:54.715Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2024-01-18T09:36:54.717Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2024-01-18T09:36:55.940Z] [runtime-status] [10160] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\Hassan Hammoud\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [10160] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\Hassan Hammoud\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-01-18T09:36:55.940Z] [runtime-status] [10160] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.6.0","resolution":"C:\\Users\\Hassan Hammoud\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [10160] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"C:\\\\Users\\\\Hassan Hammoud\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-01-18T09:36:55.941Z] [runtime-status] [10160] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [10160] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-01-18T09:36:55.942Z] [runtime-status] [10160] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.6.0","resolution":"C:\\Users\\Hassan Hammoud\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [10160] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"C:\\\\Users\\\\Hassan Hammoud\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-01-18T09:36:56.215Z] [runtime-status] [10160] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [10160] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-01-18T09:36:56.215Z] [runtime-status] [10160] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.6.0","resolution":"C:\\Users\\Hassan Hammoud\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [10160] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"C:\\\\Users\\\\Hassan Hammoud\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2024-01-18T09:36:56.216Z] [runtime-status] [10160] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.6.0","resolution":"C:\\Users\\Hassan Hammoud\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [10160] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"C:\\\\Users\\\\Hassan Hammoud\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-01-18T09:36:56.218Z] [runtime-status] [10160] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\Hassan Hammoud\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [10160] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\Hassan Hammoud\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-01-18T09:36:56.224Z] [runtime-status] [10160] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.6.0","resolution":"C:\\Users\\Hassan Hammoud\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [10160] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"C:\\\\Users\\\\Hassan Hammoud\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-01-18T09:36:56.225Z] [runtime-status] [10160] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\Hassan Hammoud\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [10160] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\Hassan Hammoud\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2024-01-18T09:36:56.426Z] [runtime-status] [10160] Functions runtime initialized. {"cwd":"C:\\Users\\Hassan Hammoud\\Desktop\\amazon-clone\\functions","node_version":"20.3.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [10160] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\Hassan Hammoud\\\\Desktop\\\\amazon-clone\\\\functions\",\"node_version\":\"20.3.0\"}"}}
+[debug] [2024-01-18T09:36:56.426Z] [runtime-status] [10160] Listening to port: \\?\pipe\fire_emu_2877d99a25ae9e8a {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [10160] Listening to port: \\\\?\\pipe\\fire_emu_2877d99a25ae9e8a"}}
+[debug] [2024-01-18T09:36:56.473Z] [worker-us-central1-api-fa424514-3a97-4157-a3f0-400a5a3ce193]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-fa424514-3a97-4157-a3f0-400a5a3ce193]: IDLE"}}
+[debug] [2024-01-18T09:36:56.474Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2024-01-18T09:36:56.475Z] [worker-us-central1-api-fa424514-3a97-4157-a3f0-400a5a3ce193]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-fa424514-3a97-4157-a3f0-400a5a3ce193]: BUSY"}}
+[debug] [2024-01-18T09:36:56.481Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 6.8513ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 6.8513ms"}}
+[debug] [2024-01-18T09:36:56.482Z] [worker-us-central1-api-fa424514-3a97-4157-a3f0-400a5a3ce193]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-fa424514-3a97-4157-a3f0-400a5a3ce193]: IDLE"}}
+[debug] [2024-01-18T09:36:56.483Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-01-18T09:36:56.483Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-01-18T09:36:56.483Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-18T09:38:09.638Z] File C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Hassan Hammoud\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-01-18T09:38:10.645Z] Validating nodejs source
+[debug] [2024-01-18T09:38:12.480Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.12.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-01-18T09:38:12.480Z] Building nodejs source
+[debug] [2024-01-18T09:38:12.480Z] Failed to find version of module node: reached end of search path C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-01-18T09:38:12.482Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-01-18T09:38:12.494Z] Found firebase-functions binary at 'C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8158
+
+[debug] [2024-01-18T09:38:13.037Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-01-18T09:38:18.063Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2024-01-18T09:38:18.063Z] [worker-us-central1-api-fa424514-3a97-4157-a3f0-400a5a3ce193]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-fa424514-3a97-4157-a3f0-400a5a3ce193]: FINISHING"}}
+[debug] [2024-01-18T09:38:18.073Z] [worker-us-central1-api-fa424514-3a97-4157-a3f0-400a5a3ce193]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-fa424514-3a97-4157-a3f0-400a5a3ce193]: exited"}}
+[debug] [2024-01-18T09:38:18.073Z] [worker-us-central1-api-fa424514-3a97-4157-a3f0-400a5a3ce193]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-fa424514-3a97-4157-a3f0-400a5a3ce193]: FINISHED"}}
+[debug] [2024-01-18T09:41:07.043Z] File C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Hassan Hammoud\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-01-18T09:41:08.052Z] Validating nodejs source
+[debug] [2024-01-18T09:41:09.544Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.12.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-01-18T09:41:09.544Z] Building nodejs source
+[debug] [2024-01-18T09:41:09.545Z] Failed to find version of module node: reached end of search path C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-01-18T09:41:09.546Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-01-18T09:41:09.552Z] Found firebase-functions binary at 'C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8506
+
+[error] C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\index.js:40
+app.post("/payment/create", async () => )
+                                        ^
+
+SyntaxError: Unexpected token ')'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1175:20)
+    at Module._compile (node:internal/modules/cjs/loader:1219:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1309:10)
+    at Module.load (node:internal/modules/cjs/loader:1113:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1137:19)
+    at require (node:internal/modules/helpers:121:18)
+    at loadModule (C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23)
+
+[debug] [2024-01-18T09:41:09.826Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Unexpected token ')'
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2024-01-18T09:41:24.443Z] File C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Hassan Hammoud\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-01-18T09:41:25.454Z] Validating nodejs source
+[debug] [2024-01-18T09:41:26.851Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.12.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-01-18T09:41:26.851Z] Building nodejs source
+[debug] [2024-01-18T09:41:26.852Z] Failed to find version of module node: reached end of search path C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-01-18T09:41:26.853Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-01-18T09:41:26.862Z] Found firebase-functions binary at 'C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8900
+
+[error] C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\index.js:42
+} )
+^
+
+SyntaxError: Unexpected token '}'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1175:20)
+    at Module._compile (node:internal/modules/cjs/loader:1219:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1309:10)
+    at Module.load (node:internal/modules/cjs/loader:1113:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1137:19)
+    at require (node:internal/modules/helpers:121:18)
+    at loadModule (C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23)
+
+[debug] [2024-01-18T09:41:27.183Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Unexpected token '}'
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2024-01-18T09:41:34.425Z] File C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Hassan Hammoud\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-01-18T09:41:35.435Z] Validating nodejs source
+[debug] [2024-01-18T09:41:36.788Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.12.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-01-18T09:41:36.788Z] Building nodejs source
+[debug] [2024-01-18T09:41:36.788Z] Failed to find version of module node: reached end of search path C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-01-18T09:41:36.789Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-01-18T09:41:36.795Z] Found firebase-functions binary at 'C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8211
+
+[error] C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\index.js:42
+} )
+^
+
+SyntaxError: Unexpected token '}'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1175:20)
+    at Module._compile (node:internal/modules/cjs/loader:1219:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1309:10)
+    at Module.load (node:internal/modules/cjs/loader:1113:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1137:19)
+    at require (node:internal/modules/helpers:121:18)
+    at loadModule (C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23)
+
+[debug] [2024-01-18T09:41:37.031Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Unexpected token '}'
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2024-01-18T09:42:11.795Z] File C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Hassan Hammoud\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
