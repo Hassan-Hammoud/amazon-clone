@@ -486,3 +486,395 @@ SyntaxError: Unexpected token '}'
 [debug] [2024-01-18T09:41:37.031Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Unexpected token '}'
 [error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
 [debug] [2024-01-18T09:42:11.795Z] File C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Hassan Hammoud\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-01-18T09:42:12.805Z] Validating nodejs source
+[debug] [2024-01-18T09:42:14.237Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.12.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-01-18T09:42:14.237Z] Building nodejs source
+[debug] [2024-01-18T09:42:14.237Z] Failed to find version of module node: reached end of search path C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-01-18T09:42:14.238Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-01-18T09:42:14.245Z] Found firebase-functions binary at 'C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8350
+
+[debug] [2024-01-18T09:42:14.727Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-01-18T09:42:56.109Z] File C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Hassan Hammoud\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-01-18T09:42:57.111Z] Validating nodejs source
+[debug] [2024-01-18T09:42:58.767Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.12.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-01-18T09:42:58.767Z] Building nodejs source
+[debug] [2024-01-18T09:42:58.767Z] Failed to find version of module node: reached end of search path C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-01-18T09:42:58.768Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-01-18T09:42:58.774Z] Found firebase-functions binary at 'C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8436
+
+[error] C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\index.js:42
+} )
+^
+
+SyntaxError: Unexpected token '}'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1175:20)
+    at Module._compile (node:internal/modules/cjs/loader:1219:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1309:10)
+    at Module.load (node:internal/modules/cjs/loader:1113:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1137:19)
+    at require (node:internal/modules/helpers:121:18)
+    at loadModule (C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23)
+
+[debug] [2024-01-18T09:42:59.047Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Unexpected token '}'
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2024-01-18T09:43:35.797Z] File C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Hassan Hammoud\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-01-18T09:43:36.809Z] Validating nodejs source
+[debug] [2024-01-18T09:43:38.264Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.12.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-01-18T09:43:38.264Z] Building nodejs source
+[debug] [2024-01-18T09:43:38.264Z] Failed to find version of module node: reached end of search path C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-01-18T09:43:38.265Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-01-18T09:43:38.271Z] Found firebase-functions binary at 'C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8041
+
+[error] C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\index.js:43
+    })
+    ^
+
+SyntaxError: Unexpected token '}'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1175:20)
+    at Module._compile (node:internal/modules/cjs/loader:1219:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1309:10)
+    at Module.load (node:internal/modules/cjs/loader:1113:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1137:19)
+    at require (node:internal/modules/helpers:121:18)
+    at loadModule (C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23)
+
+[debug] [2024-01-18T09:43:38.478Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Unexpected token '}'
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2024-01-18T09:44:53.386Z] File C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Hassan Hammoud\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-01-18T09:44:54.388Z] Validating nodejs source
+[debug] [2024-01-18T09:44:56.491Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.12.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-01-18T09:44:56.491Z] Building nodejs source
+[debug] [2024-01-18T09:44:56.491Z] Failed to find version of module node: reached end of search path C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-01-18T09:44:56.493Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-01-18T09:44:56.502Z] Found firebase-functions binary at 'C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8472
+
+[debug] [2024-01-18T09:44:57.038Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-01-18T09:45:16.041Z] File C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Hassan Hammoud\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-01-18T09:45:17.042Z] Validating nodejs source
+[debug] [2024-01-18T09:45:18.253Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.12.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-01-18T09:45:18.253Z] Building nodejs source
+[debug] [2024-01-18T09:45:18.253Z] Failed to find version of module node: reached end of search path C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-01-18T09:45:18.254Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-01-18T09:45:18.261Z] Found firebase-functions binary at 'C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8565
+
+[debug] [2024-01-18T09:45:18.723Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-01-18T09:48:06.829Z] File C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Hassan Hammoud\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-01-18T09:48:07.842Z] Validating nodejs source
+[debug] [2024-01-18T09:48:09.307Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.12.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-01-18T09:48:09.307Z] Building nodejs source
+[debug] [2024-01-18T09:48:09.307Z] Failed to find version of module node: reached end of search path C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-01-18T09:48:09.308Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-01-18T09:48:09.314Z] Found firebase-functions binary at 'C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8606
+
+[debug] [2024-01-18T09:48:09.794Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-01-18T09:48:33.398Z] File C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Hassan Hammoud\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-01-18T09:48:34.408Z] Validating nodejs source
+[debug] [2024-01-18T09:48:35.877Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.12.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-01-18T09:48:35.877Z] Building nodejs source
+[debug] [2024-01-18T09:48:35.877Z] Failed to find version of module node: reached end of search path C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-01-18T09:48:35.878Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-01-18T09:48:35.884Z] Found firebase-functions binary at 'C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8646
+
+[debug] [2024-01-18T09:48:36.381Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-01-18T09:50:12.798Z] File C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Hassan Hammoud\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-01-18T09:50:13.814Z] Validating nodejs source
+[debug] [2024-01-18T09:50:15.294Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.12.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-01-18T09:50:15.294Z] Building nodejs source
+[debug] [2024-01-18T09:50:15.294Z] Failed to find version of module node: reached end of search path C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-01-18T09:50:15.295Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-01-18T09:50:15.302Z] Found firebase-functions binary at 'C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8059
+
+[debug] [2024-01-18T09:50:15.790Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-01-18T09:50:43.857Z] File C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Hassan Hammoud\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-01-18T09:50:44.863Z] Validating nodejs source
+[debug] [2024-01-18T09:50:46.377Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.12.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-01-18T09:50:46.377Z] Building nodejs source
+[debug] [2024-01-18T09:50:46.378Z] Failed to find version of module node: reached end of search path C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-01-18T09:50:46.379Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-01-18T09:50:46.385Z] Found firebase-functions binary at 'C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8191
+
+[debug] [2024-01-18T09:50:46.896Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-01-18T09:51:31.690Z] File C:\Users\Hassan Hammoud\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Hassan Hammoud\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}

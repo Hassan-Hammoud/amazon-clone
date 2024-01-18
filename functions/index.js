@@ -37,6 +37,18 @@ app.use(express.json());
 
 app.get("/", (req, res) => res.status(200).send("Hello WorldD!"));
 
+app.post("/payment/create", async (req, res) => {
+  // create session
+  const total = req.query.total;
+  const paymentIntent = await stripe.paymentIntents.create({
+    amount: total,
+    currency: "usd",
+  });
+  res.status(201).send({
+    clientSecret: paymentIntent.client_secret,
+  });
+});
+
 // Listen Command
 
 exports.api = functions.https.onRequest(app);
